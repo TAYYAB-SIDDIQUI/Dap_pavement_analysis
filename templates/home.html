@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pavement predicion</title>
     <style>
+        body{
+            justify-items: center;
+        }
         label{
             font-size: 20px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -12,13 +15,15 @@
         input{
             border-radius: 5px;
             font-size: 20px;
+            margin: 0.5%;
+            width: max-content;
         }
     </style>
 </head>
 <body>
     <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Pavement Prediction</h2>
     <form action="/predict" method="post">
-        <div style="display: flex; flex-direction: column;">
+        <div style="display: flex; flex-direction: column; width:75%">
             <label for="PCI">PCI : </label>
             <input type="text" id="PCI", name="PCI">
             <label for="Road Type">Road Type :</label>
@@ -35,7 +40,7 @@
             <input type="text" id="Rutting" name="Rutting">
             <label for="IRI">IRI : </label>
             <input type="text" id="IRI" name="IRI">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" style="width: max-content;">
         </div> 
     </form>
 </body>
