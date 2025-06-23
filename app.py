@@ -87,7 +87,11 @@ def pred():
        'Last Maintenance', 'Average Rainfall', 'Rutting', 'IRI',
        'Needs Maintenance']
     ans=model.predict(df)
-    return f"{ans}"
+    if ans==[1]:
+        pred='Segment Need Maintenace.'
+    if ans==[0]:
+        pred='Segment Does not need Maintenacne for Now.'
+    return f"<h3>{pred}</h3>"
 
 if __name__=="__main__":
     app.run(debug=True)
