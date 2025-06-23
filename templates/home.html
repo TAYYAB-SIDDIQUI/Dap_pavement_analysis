@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavement predicion</title>
+    <style>
+        label{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        input{
+            border-radius: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Pavement Prediction</h2>
+    <form action="/predict" method="post">
+        <div style="display: flex; flex-direction: column;">
+            <label for="PCI">PCI : </label>
+            <input type="text" id="PCI", name="PCI">
+            <label for="Road Type">Road Type :</label>
+            <input type="text" id="Road Type" name="Road Type">
+            <label for="AADT">AADT : </label>
+            <input type="text" id="AADT" name="AADT">
+            <label for="Asphalt Type">Asphalt Type : </label>
+            <input type="text" id="Asphalt Type" name="Asphalt Type">
+            <label for="Last Maintenance">Last Maintenance : </label>
+            <input type="text" id="Last Maintenance" name="Last Maintenance">
+            <label for="Average Rainfall">Average Rainfall : </label>
+            <input type="text" id="Average Rainfall" name="Average Rainfall">
+            <label for="Rutting">Rutting : </label>
+            <input type="text" id="Rutting" name="Rutting">
+            <label for="IRI">IRI : </label>
+            <input type="text" id="IRI" name="IRI">
+            <input type="submit" value="Submit">
+        </div> 
+    </form>
+</body>
+</html>
